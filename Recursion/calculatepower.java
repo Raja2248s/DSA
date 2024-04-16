@@ -6,15 +6,9 @@
 public class Main {
   public static void main(String[] args) {
     int a = 3;
-    int b = 9;
-    if (b % 2 == 0) {
-      int k = power(a, b);
-      System.out.println(k);
-    } else {
-      int k = power(a, b - 1);
-      System.out.println(a * k);
-    }
-
+    int b = 11;
+    int k=power(a,b);
+   System.out.println(k);
   }
 
   public static int power(int a, int b) {
@@ -23,9 +17,15 @@ public class Main {
     }
     if (b == 1) {
       return a;
-    } else {
-      return power(a, b / 2) * power(a, b / 2);
+    } 
+      int ans = power(a, b / 2) ;
+    if(b%2==0){
+      return ans*ans;
     }
+    else{
+      return a*ans*ans;
+    }
+    
 
   }
 
