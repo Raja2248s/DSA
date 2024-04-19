@@ -3,7 +3,7 @@
 // and so on...
 //   the problem is if the power(b) is odd  then while dtaking b/2 it will be //floor value therefore at last multiply a value
 
-public class Main {
+public class Calculatepower {
   public static void main(String[] args) {
     int a = 3;
     int b = 11;
