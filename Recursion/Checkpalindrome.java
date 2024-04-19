@@ -1,5 +1,5 @@
 
-public class Main {
+public class Checkpalindrome {
   public static void main(String[] args) {
 
     String a = "aabaa";
